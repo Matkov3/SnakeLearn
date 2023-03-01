@@ -9,23 +9,18 @@ public class Snake
 {
     static void Main()
     {
-        int x1 = 1;
-        int y1 = 5;
-        char symb1 = '*';
-        Draw(x1, y1, symb1);
+        Point point1 = new Point();
+        point1.x = 5;
+        point1.y = 10;
+        point1.symbl = '*';
+        point1.Draw();
 
-        int x2 = 3;
-        int y2 = 7;
-        char symb2 = '%';
-        Draw(x2, y2, symb2);
+        Point point2 = new Point();
+        point2.x = 1;
+        point2.y = 6;
+        point2.symbl = '%';
+        point2.Draw();
 
         Console.ReadLine();
     }
-
-    public static void Draw(int x, int y, char symb)
-    {
-        Console.SetCursorPosition(x, y);
-        Console.Write(symb);
-       }
-
 }
