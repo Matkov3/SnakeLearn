@@ -12,7 +12,18 @@ namespace Snake
          public int y;
          public char symbl;
 
-         public void Draw()
+        public Point(int _x, int _y, char _symbl)
+        {
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine($"\t Enter new point: ");
+            x = _x; 
+            y = _y;
+            symbl = _symbl;
+            
+        }
+
+        public void Draw()
          {
              Console.SetCursorPosition(x, y);
              Console.Write(symbl);

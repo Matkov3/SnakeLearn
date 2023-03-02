@@ -9,16 +9,10 @@ public class Snake
 {
     static void Main()
     {
-        Point point1 = new Point();
-        point1.x = 5;
-        point1.y = 10;
-        point1.symbl = '*';
+        Point point1 = new Point(5,7, '*');
         point1.Draw();
-
-        Point point2 = new Point();
-        point2.x = 1;
-        point2.y = 6;
-        point2.symbl = '%';
+       
+        Point point2 = new Point(9,16,'#');
         point2.Draw();
 
         Console.ReadLine();
