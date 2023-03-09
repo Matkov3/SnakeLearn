@@ -15,8 +15,6 @@ namespace Snake
         public Point(int _x, int _y, char _symbl)
         {
             Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine($"\t Enter new point: ");
             x = _x; 
             y = _y;
             symbl = _symbl;
@@ -28,5 +26,6 @@ namespace Snake
              Console.SetCursorPosition(x, y);
              Console.Write(symbl);
          }
-     }
+        
+    }
 }
