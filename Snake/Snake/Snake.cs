@@ -27,16 +27,25 @@ public class Snake
         point4.Draw();
         Console.WriteLine();
         
-        List<Point> points = new List<Point>(4);
-        points.Add(point1);
-        points.Add(point2);
-        points.Add(point3);
-        points.Add(point4);
+        //List<Point> points = new List<Point>(4);
+        //points.Add(point1);
+        //points.Add(point2);
+        //points.Add(point3);
+        //points.Add(point4);
 
-        foreach (var symble in points)
-        {
-            Console.Write($"{symble.symbl}\n");
-        }
+        //foreach (var symble in points)
+        //{
+        //    Console.Write($"{symble.symbl}\n");
+        //}
+
+        Console.WriteLine();
+
+        HorizontalLine gHorizontalLine = new HorizontalLine(4,12,10,'%');
+        gHorizontalLine.Drow();
+
+        VerticalLine verticalLine = new VerticalLine(5, 1,9,'*');
+        verticalLine.DrawVertyc();
+
 
 
 
